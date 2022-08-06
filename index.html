@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega-Sena</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="alternarTema">
+    
+        <label class="switch">
+            <input type="checkbox" id="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="img/logoMegaSena.png" alt="Logotipo mega-sena">
+        </header>
+        
+        <main>
+            <div>
+                <button onclick="selecionarNumeros(1)" id="num-1">01</button>
+                <button onclick="selecionarNumeros(2)" id="num-2">02</button>
+                <button onclick="selecionarNumeros(3)" id="num-3">03</button>
+                <button onclick="selecionarNumeros(4)" id="num-4">04</button>
+                <button onclick="selecionarNumeros(5)" id="num-5">05</button>
+                <button onclick="selecionarNumeros(6)" id="num-6">06</button>
+                <button onclick="selecionarNumeros(7)" id="num-7">07</button>
+                <button onclick="selecionarNumeros(8)" id="num-8">08</button>
+                <button onclick="selecionarNumeros(9)" id="num-9">09</button>
+                <button onclick="selecionarNumeros(10)" id="num-10">10</button>
+            </div>
+
+            <div>
+                <button onclick="selecionarNumeros(11)" id="num-11">11</button>
+                <button onclick="selecionarNumeros(12)" id="num-12">12</button>
+                <button onclick="selecionarNumeros(13)" id="num-13">13</button>
+                <button onclick="selecionarNumeros(14)" id="num-14">14</button>
+                <button onclick="selecionarNumeros(15)" id="num-15">15</button>
+                <button onclick="selecionarNumeros(16)" id="num-16">16</button>
+                <button onclick="selecionarNumeros(17)" id="num-17">17</button>
+                <button onclick="selecionarNumeros(18)" id="num-18">18</button>
+                <button onclick="selecionarNumeros(19)" id="num-19">19</button>
+                <button onclick="selecionarNumeros(20)" id="num-20">20</button>
+            </div>
+
+            <div>
+                <button onclick="selecionarNumeros(21)" id="num-21">21</button>
+                <button onclick="selecionarNumeros(22)" id="num-22">22</button>
+                <button onclick="selecionarNumeros(23)" id="num-23">23</button>
+                <button onclick="selecionarNumeros(24)" id="num-24">24</button>
+                <button onclick="selecionarNumeros(25)" id="num-25">25</button>
+                <button onclick="selecionarNumeros(26)" id="num-26">26</button>
+                <button onclick="selecionarNumeros(27)" id="num-27">27</button>
+                <button onclick="selecionarNumeros(28)" id="num-28">28</button>
+                <button onclick="selecionarNumeros(29)" id="num-29">29</button>
+                <button onclick="selecionarNumeros(30)" id="num-30">30</button>
+            </div>
+
+            <div>
+                <button onclick="selecionarNumeros(31)" id="num-31">31</button>
+                <button onclick="selecionarNumeros(32)" id="num-32">32</button>
+                <button onclick="selecionarNumeros(33)" id="num-33">33</button>
+                <button onclick="selecionarNumeros(34)" id="num-34">34</button>
+                <button onclick="selecionarNumeros(35)" id="num-35">35</button>
+                <button onclick="selecionarNumeros(36)" id="num-36">36</button>
+                <button onclick="selecionarNumeros(37)" id="num-37">37</button>
+                <button onclick="selecionarNumeros(38)" id="num-38">38</button>
+                <button onclick="selecionarNumeros(39)" id="num-39">39</button>
+                <button onclick="selecionarNumeros(40)" id="num-40">40</button>
+            </div>
+
+            <div>
+                <button onclick="selecionarNumeros(41)" id="num-41">41</button>
+                <button onclick="selecionarNumeros(42)" id="num-42">42</button>
+                <button onclick="selecionarNumeros(43)" id="num-43">43</button>
+                <button onclick="selecionarNumeros(44)" id="num-44">44</button>
+                <button onclick="selecionarNumeros(45)" id="num-45">45</button>
+                <button onclick="selecionarNumeros(46)" id="num-46">46</button>
+                <button onclick="selecionarNumeros(47)" id="num-47">47</button>
+                <button onclick="selecionarNumeros(48)" id="num-48">48</button>
+                <button onclick="selecionarNumeros(49)" id="num-49">49</button>
+                <button onclick="selecionarNumeros(50)" id="num-50">50</button>
+            </div>
+
+            <div>
+                <button onclick="selecionarNumeros(51)" id="num-51">51</button>
+                <button onclick="selecionarNumeros(52)" id="num-52">52</button>
+                <button onclick="selecionarNumeros(53)" id="num-53">53</button>
+                <button onclick="selecionarNumeros(54)" id="num-54">54</button>
+                <button onclick="selecionarNumeros(55)" id="num-55">55</button>
+                <button onclick="selecionarNumeros(56)" id="num-56">56</button>
+                <button onclick="selecionarNumeros(57)" id="num-57">57</button>
+                <button onclick="selecionarNumeros(58)" id="num-58">58</button>
+                <button onclick="selecionarNumeros(59)" id="num-59">59</button>
+                <button onclick="selecionarNumeros(60)" id="num-60">60</button>
+            </div>
+
+        </main>
+
+        <button onclick="apostar()" class="btn" id="btnApostar" > Apostar </button>
+
+        <section class="resultado" id="resultado">
+            
+        </section>
+
+        <footer>
+            <div id="valor">
+                <p>Valor da Aposta</p>
+                <p class="valor">R$ 0,00</p>
+            </div>
+
+            <div id="qntNum">
+                <p>Qnt. Números</p>
+                <p class="valor">0</p>
+            </div>
+            <div id="acertos">
+                <p>Acertos</p>
+                <p class="valor">0</p>
+            </div>
+
+
+        </footer>
+
+        
+        
+    </div>
+    <button id="btnReiniciar" class="btn" >Reiniciar</button>
+
+    <script src="./js/scripts.js"></script>
+    
+</body>
+</html>
